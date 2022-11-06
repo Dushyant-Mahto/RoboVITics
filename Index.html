@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboVITics</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+   </div>
+   <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#FAQ's">FAQ's</a>
+        <a href="#contact">Login/Sign Up</a>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="title-group">
+<br><br><br><br><br>
+            <h1>🤖  RoboVITics  🤖</h1>
+            <br><br>
+            <h2>"When the Robots will take over, we would be the one behind it."</h2>
+            <br><br><br>
+            <h2>Welcome to your website!</h2>
+            <br><br><br>
+            <h2>Upcoming Events:</h2>
+            <div class="banner-1">
+                <div class="slideshow-container fade">
+        
+                    <!-- Full images with numbers and message Info -->
+                    <div class="Containers">
+                      <div class="MessageInfo">1 / 3</div>
+                      <img src="./img_!.jpg" style="width:100%">
+                      <!-- <div class="Info">First caption</div> -->
+                    </div>
+                  
+                    <div class="Containers">
+                      <div class="MessageInfo">2 / 3</div>
+                      <img src="./img_2.jpg" style="width:100%">
+                      <!-- <div class="Info">Second Caption</div> -->
+                    </div>
+                  
+                    <div class="Containers">
+                      <div class="MessageInfo">3 / 3</div>
+                      <img src="./img_3.jpg" style="width:100%">
+                      <!-- <div class="Info">Third Caption</div> -->
+                    </div>
+                  
+                    <!-- Back and forward buttons -->
+                    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <!-- The circles/dots -->
+                  <div style="text-align:center">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                    <span class="dots" onclick="currentSlide(3)"></span>
+                  </div> 
+
+                  <br>
+
+        
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <div class="center">
+        <button><a href="../Register/index1.html">>>>Register now</a></button>
+      </div>
+    <!-- About Section -->
+    <section id="about">
+      <div class="Carousel-container">
+        <i class="fas fa-angle-left" id="btnPrev"></i>
+        <i class="fas fa-angle-right" id="btnNext"></i>
+        
+        <div class="carousel-slide">
+          <img src="./img_4.jpg" id="lastClone" alt="">
+          <img src="./img_5.jpg" alt="">
+          <img src="./img_6.jpg" id="firstClone" alt="">
+          
+    
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section id="FAQ's">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">
+                How does someone Register for the events</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Just click on Register now to and you will be redirected to a page where you need to fill a form
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title"
+                >Do we need prerequisite knowledge for the event?</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>No, you don't necessarily need one.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title"
+                >Which Year's of student can participate?</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Student's from any year can participate for the evnt.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false">
+              <span class="accordion-title"
+                >Can someone from outside VIT participate for the event</span
+              >
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, there are no such restrictions.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false">
+              <span class="accordion-title">
+                Is it worth Participating in the evnts
+              </span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yes, it is, you gain work experience that you do not get in normal Classrooms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="doubt">
+    <h2>
+      Ask your Doubt here:
+      </h2>
+      <button onclick = "fun()">
+        Click me
+        </button>
+        <p id = "para"></p>
+      </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="social-icons">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-medium"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="./Script.js"></script>
+</body>
+</html>
